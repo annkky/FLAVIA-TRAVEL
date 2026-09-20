@@ -33,7 +33,7 @@ body {
     radial-gradient(circle at right 15%, rgba(191, 209, 231, 0.1), transparent 22%),
     linear-gradient(180deg, #ffffff 0%, #ffffff 55%, #fbfdff 100%);
   color: var(--ink);
-  font: 16px/1.65 var(--body);
+  font: 15px/1.65 var(--body);
 }
 
 a {
@@ -135,14 +135,14 @@ iframe {
 }
 
 .brand-copy strong {
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 0.1em;
 }
 
 .brand-copy small {
   margin-top: 2px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -152,7 +152,7 @@ iframe {
   align-items: center;
   gap: 26px;
   margin-left: auto;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -256,8 +256,8 @@ iframe {
 .hero h1 {
   max-width: 10.8ch;
   color: #fffaf4;
-  font-size: clamp(3.3rem, 7vw, 6.6rem);
-  line-height: 0.98;
+  font-size: clamp(2.7rem, 5.8vw, 5.1rem);
+  line-height: 1;
 }
 
 .hero h1 em,
@@ -271,7 +271,7 @@ iframe {
   max-width: 620px;
   margin: 28px 0 0;
   color: rgba(239, 245, 255, 0.84);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .hero-actions,
@@ -290,7 +290,7 @@ iframe {
   padding: 0 24px;
   border: 1px solid transparent;
   border-radius: 999px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease;
 }
@@ -347,14 +347,14 @@ iframe {
 .hero-metrics strong {
   display: block;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .hero-metrics span {
   display: block;
   margin-top: 6px;
   color: rgba(237, 245, 255, 0.72);
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .hero-panel {
@@ -403,8 +403,8 @@ iframe {
 
 .hero-card-main h2 {
   max-width: 10ch;
-  font-size: clamp(2rem, 3vw, 3rem);
-  line-height: 1.04;
+  font-size: clamp(1.7rem, 2.5vw, 2.45rem);
+  line-height: 1.08;
 }
 
 .hero-card-main ul {
@@ -453,7 +453,7 @@ iframe {
 
 .hero-card-meta strong {
   color: var(--ink);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.4;
 }
 
@@ -474,7 +474,7 @@ iframe {
 
 .hero-stamp span {
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -483,7 +483,7 @@ iframe {
   display: block;
   margin-top: 4px;
   font-family: var(--display);
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .signal-bar {
@@ -507,7 +507,7 @@ iframe {
 
 .signal-track span {
   color: var(--ink);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -518,8 +518,8 @@ iframe {
 .section-heading h2,
 .contact-copy h2 {
   max-width: 13ch;
-  font-size: clamp(2.3rem, 4.6vw, 4.4rem);
-  line-height: 1.02;
+  font-size: clamp(1.9rem, 3.8vw, 3.35rem);
+  line-height: 1.06;
 }
 
 .section-heading.compact h2 {
@@ -559,7 +559,7 @@ iframe {
 .trust-copy blockquote,
 .license-card p {
   margin: 0;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .about-grid {
@@ -613,8 +613,8 @@ iframe {
 .process-list h3,
 .license-card h3,
 .director-card h3 {
-  font-size: 24px;
-  line-height: 1.15;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .feature-card p,
@@ -682,7 +682,7 @@ iframe {
   background: rgba(132, 167, 214, 0.16);
   color: var(--accent-deep);
   font-family: var(--display);
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .trust-layout {
@@ -716,7 +716,7 @@ iframe {
   background: linear-gradient(135deg, #e0ebf8 0%, #cddff5 100%);
   color: var(--accent-deep);
   font-family: var(--display);
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .director-card a,
@@ -749,7 +749,7 @@ iframe {
 }
 
 .license-state strong {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .license-state span {
@@ -970,7 +970,7 @@ iframe {
 
   .hero h1 {
     max-width: none;
-    font-size: clamp(2.6rem, 15vw, 4.2rem);
+    font-size: clamp(2.2rem, 13vw, 3.5rem);
   }
 
   .lead,
@@ -979,7 +979,7 @@ iframe {
   .contact-copy p,
   .trust-copy blockquote,
   .license-card p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .section {
@@ -988,7 +988,7 @@ iframe {
 
   .section-heading h2,
   .contact-copy h2 {
-    font-size: clamp(2.1rem, 12vw, 3.2rem);
+    font-size: clamp(1.85rem, 10vw, 2.7rem);
   }
 
   .hero-card-main,
