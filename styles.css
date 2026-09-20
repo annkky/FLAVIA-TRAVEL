@@ -1045,6 +1045,10 @@ main {
     gap: 24px;
   }
 
+  .hero-copy {
+    max-width: 100%;
+  }
+
   .hero-actions,
   .contact-actions {
     gap: 10px;
@@ -1052,12 +1056,22 @@ main {
   }
 
   .button {
-    min-height: 50px;
-    padding: 0 20px;
+    min-height: 46px;
+    padding: 0 16px;
+  }
+
+  .hero-actions .button,
+  .contact-actions .button {
+    width: 100%;
   }
 
   .hero-metrics {
-    margin-top: 28px;
+    margin-top: 22px;
+    gap: 10px;
+  }
+
+  .hero-metrics article {
+    padding: 14px;
   }
 
   .lead,
@@ -1070,7 +1084,7 @@ main {
   }
 
   .section {
-    padding: 76px 0;
+    padding: 58px 0;
   }
 
   .section-heading h2,
@@ -1084,13 +1098,51 @@ main {
   .license-card,
   .contact-panel,
   .process-list article {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .hero-card-main {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .hero-card-main ul {
+    margin-top: 16px;
+  }
+
+  .feature-card,
+  .service-card,
+  .license-card,
+  .process-list article {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 18px;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .services-grid,
+  .about-grid,
+  .process-list {
+    gap: 14px;
+  }
+
+  .contact-panel {
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .contact-details {
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .map-card iframe {
+    min-height: 250px;
   }
 
   .hero-card-main h2 {
@@ -1111,7 +1163,15 @@ main {
   .director-card {
     display: grid;
     grid-template-columns: 72px 1fr;
-    border-radius: 28px;
+    border-radius: 20px;
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .director-badge {
+    width: 58px;
+    height: 58px;
+    font-size: 17px;
   }
 
   .site-footer p {
@@ -1153,11 +1213,39 @@ main {
   .license-card,
   .contact-panel,
   .process-list article {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .hero-card-main {
-    padding-right: 102px;
+    padding-right: 96px;
+  }
+
+  .hero-actions,
+  .contact-actions {
+    gap: 8px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.75rem, 10vw, 2.4rem);
+  }
+
+  .hero-stamp {
+    width: 70px;
+    height: 70px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .hero-stamp strong {
+    font-size: 16px;
+  }
+
+  .hero-metrics strong {
+    font-size: 14px;
+  }
+
+  .hero-metrics span {
+    font-size: 11px;
   }
 }
