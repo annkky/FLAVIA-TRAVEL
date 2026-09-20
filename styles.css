@@ -1105,6 +1105,7 @@ main {
   .hero-card-main {
     padding-top: 22px;
     padding-bottom: 22px;
+    padding-right: 18px;
   }
 
   .hero-card-main ul {
@@ -1150,14 +1151,15 @@ main {
   }
 
   .hero-stamp {
-    width: 78px;
-    height: 78px;
-    top: 14px;
-    right: 14px;
+    position: static;
+    margin-top: 12px;
+    margin-left: auto;
+    width: 74px;
+    height: 74px;
   }
 
   .hero-stamp strong {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .director-card {
@@ -1218,7 +1220,7 @@ main {
   }
 
   .hero-card-main {
-    padding-right: 96px;
+    padding-right: 14px;
   }
 
   .hero-actions,
@@ -1231,14 +1233,13 @@ main {
   }
 
   .hero-stamp {
-    width: 70px;
-    height: 70px;
-    top: 12px;
-    right: 12px;
+    width: 66px;
+    height: 66px;
+    margin-top: 10px;
   }
 
   .hero-stamp strong {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .hero-metrics strong {
