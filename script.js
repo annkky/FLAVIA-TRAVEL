@@ -89,6 +89,12 @@ const translations = {
     addressLabel: "Адрес",
     addressBody: "ул. Садыка Азимова, 46<br>Яшнабадский район, Ташкент",
     mapTitle: "Карта: офис FLAVIA TRAVEL VTA в Ташкенте",
+    paymentLabel: "Онлайн-оплата",
+    paymentTitle: "Оплатить через CLICK",
+    paymentLead: "Укажите сумму на сайте, после чего клиент перейдёт в CLICK и безопасно завершит оплату онлайн.",
+    paymentAmountLabel: "Сумма, UZS",
+    paymentNote: "SERVICE_ID: 113109 · MERCHANT_ID: 65333 · Получатель: «FLAVIA TRAVEL VTA» MCHJ",
+    paymentSubmit: "Перейти к оплате",
     footerRights: "© <span id=\"year\"></span> ООО «FLAVIA TRAVEL VTA». Все права защищены."
   },
   en: {
@@ -176,6 +182,12 @@ const translations = {
     addressLabel: "Address",
     addressBody: "46 Sadyka Azimova Street<br>Yashnabad district, Tashkent",
     mapTitle: "Map: FLAVIA TRAVEL VTA office in Tashkent",
+    paymentLabel: "Online payment",
+    paymentTitle: "Pay with CLICK",
+    paymentLead: "Enter the amount on the website, then the customer will continue to CLICK and safely complete the payment online.",
+    paymentAmountLabel: "Amount, UZS",
+    paymentNote: "SERVICE_ID: 113109 · MERCHANT_ID: 65333 · Recipient: FLAVIA TRAVEL VTA LLC",
+    paymentSubmit: "Proceed to payment",
     footerRights: "© <span id=\"year\"></span> FLAVIA TRAVEL VTA LLC. All rights reserved."
   },
   uz: {
@@ -263,6 +275,12 @@ const translations = {
     addressLabel: "Manzil",
     addressBody: "Sodiq Azimov ko‘chasi, 46<br>Yashnobod tumani, Toshkent",
     mapTitle: "Xarita: FLAVIA TRAVEL VTA ofisi, Toshkent",
+    paymentLabel: "Onlayn to‘lov",
+    paymentTitle: "CLICK orqali to‘lash",
+    paymentLead: "Saytda summani kiriting, shundan so‘ng mijoz CLICK sahifasiga o‘tib, to‘lovni xavfsiz yakunlashi mumkin.",
+    paymentAmountLabel: "Summa, UZS",
+    paymentNote: "SERVICE_ID: 113109 · MERCHANT_ID: 65333 · Qabul qiluvchi: «FLAVIA TRAVEL VTA» MCHJ",
+    paymentSubmit: "To‘lovga o‘tish",
     footerRights: "© <span id=\"year\"></span> FLAVIA TRAVEL VTA MChJ. Barcha huquqlar himoyalangan."
   }
 };
@@ -302,7 +320,13 @@ const textTargets = {
   phonesLabel: ".contact-details > div:nth-child(1) small",
   mailLabel: ".contact-details > div:nth-child(2) small",
   scheduleLabel: ".contact-details > div:nth-child(3) small",
-  addressLabel: ".contact-details > div:nth-child(4) small"
+  addressLabel: ".contact-details > div:nth-child(4) small",
+  paymentLabel: ".payment-label",
+  paymentTitle: ".payment-card h3",
+  paymentLead: ".payment-card-head p",
+  paymentAmountLabel: ".payment-field span",
+  paymentNote: ".payment-note",
+  paymentSubmit: ".payment-submit"
 };
 
 const htmlTargets = {
@@ -522,6 +546,18 @@ const toggleHeaderState = () => {
 
   siteHeader.classList.toggle("scrolled", window.scrollY > 18);
 };
+
+const paymentForm = document.querySelector(".payment-card");
+
+if (paymentForm) {
+  paymentForm.addEventListener("submit", () => {
+    const hiddenTransactionField = paymentForm.querySelector("input[name='transaction_param']");
+
+    if (hiddenTransactionField) {
+      hiddenTransactionField.value = `flavia-${Date.now()}`;
+    }
+  });
+}
 
 toggleHeaderState();
 window.addEventListener("scroll", toggleHeaderState, { passive: true });

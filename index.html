@@ -275,6 +275,27 @@
           <div class="map-card">
             <iframe title="Карта: офис FLAVIA TRAVEL VTA в Ташкенте" src="https://www.google.com/maps?q=%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%A1%D0%B0%D0%B4%D1%8B%D0%BA%D0%B0+%D0%90%D0%B7%D0%B8%D0%BC%D0%BE%D0%B2%D0%B0,+46&output=embed" loading="lazy"></iframe>
           </div>
+
+          <form class="payment-card" id="payment" action="https://my.click.uz/services/pay" method="get" target="_blank" rel="noopener">
+            <div class="payment-card-head">
+              <span class="payment-label">Онлайн-оплата</span>
+              <h3>Оплатить через CLICK</h3>
+              <p>Укажите сумму на сайте, после чего клиент перейдёт в CLICK и безопасно завершит оплату онлайн.</p>
+            </div>
+
+            <input type="hidden" name="service_id" value="113109">
+            <input type="hidden" name="merchant_id" value="65333">
+            <input type="hidden" name="transaction_param" value="">
+
+            <label class="payment-field">
+              <span>Сумма, UZS</span>
+              <input type="number" name="amount" min="1000" step="1000" value="100000" required>
+            </label>
+
+            <p class="payment-note">SERVICE_ID: 113109 · MERCHANT_ID: 65333 · Получатель: «FLAVIA TRAVEL VTA» MCHJ</p>
+
+            <button class="button button-primary payment-submit" type="submit">Перейти к оплате</button>
+          </form>
         </div>
       </div>
     </section>
